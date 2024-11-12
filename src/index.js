@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./index.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <Header />
       <Menu />
       <Footer />
@@ -12,17 +13,21 @@ function App() {
 }
 
 function Header() {
-  return <h1>Crafted with Speed, Served with Style – Your Pizza, Your Way!</h1>;
+  return (
+    <header className="header">
+      <h1>Fast. Fresh. Yours.</h1>
+    </header>
+  );
 }
 
 function Menu() {
   return (
-    <div>
+    <main className="menu">
       <h2>Our menu</h2>
       <Pizza />
       <Pizza />
       <Pizza />
-    </div>
+    </main>
   );
 }
 
@@ -34,7 +39,9 @@ function Footer() {
   console.log(isOpen);
 
   return (
-    <footer>{new Date().toLocaleTimeString()}. We're currently open</footer>
+    <footer className="footer">
+      {new Date().toLocaleTimeString()}. We're currently open
+    </footer>
   );
 }
 
@@ -42,7 +49,7 @@ function Pizza() {
   return (
     <div>
       <img src="pizzas/salamino.jpg" alt="Salamino Pizza" />
-      <h2>Pizza Salamino</h2>
+      <h3>Pizza Salamino</h3>
       <p>Tomato, mozarella, and pepperoni</p>
     </div>
   );

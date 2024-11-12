@@ -31,7 +31,7 @@ body {
   gap: 4.8rem;
 }
 
-/* *************** */
+/* ******** Header ******* */
 
 .header {
   align-self: stretch;
@@ -57,7 +57,7 @@ body {
   display: block;
   content: "";
   height: 3px;
-  width: 12rem;
+  width: 4rem;
   background-color: #edc84b;
   position: absolute;
   top: calc(50% - 1px);
@@ -71,7 +71,7 @@ body {
   right: 0;
 }
 
-/* *************** */
+/* ******** Menu ******* */
 
 .menu {
   display: flex;
@@ -149,7 +149,7 @@ body {
   opacity: 0.8;
 }
 
-/* *************** */
+/* ******* Footer ******** */
 
 .footer {
   font-size: 1.4rem;
