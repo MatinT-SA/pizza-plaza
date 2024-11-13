@@ -75,19 +75,6 @@ function Menu() {
           <Pizza pizzaObj={pizza} key={pizza.name} />
         ))}
       </ul>
-
-      {/* <Pizza
-        name="Pizza Salamino"
-        ingredients="Tomato, mozarella, and pepperoni"
-        photoName="pizzas/salamino.jpg"
-        price={20}
-      />
-      <Pizza
-        name="Focaccia"
-        ingredients="Bread with italian olive oil and rosemary"
-        photoName="pizzas/focaccia.jpg"
-        price={30}
-      /> */}
     </main>
   );
 }
@@ -114,7 +101,14 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {new Date().toLocaleTimeString()}. We're currently open
+      {isOpen && (
+        <div className="order">
+          <p>
+            We're open until {closeHour}:00. Please visit us or order online.
+          </p>
+          <button className="btn">Order</button>
+        </div>
+      )}
     </footer>
   );
 }
