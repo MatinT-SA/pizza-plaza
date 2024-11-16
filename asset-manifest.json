@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pizza-plaza/static/css/main.319f9eb8.css",
+    "main.js": "/pizza-plaza/static/js/main.87b4200e.js",
+    "index.html": "/pizza-plaza/index.html",
+    "main.319f9eb8.css.map": "/pizza-plaza/static/css/main.319f9eb8.css.map",
+    "main.87b4200e.js.map": "/pizza-plaza/static/js/main.87b4200e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.319f9eb8.css",
+    "static/js/main.87b4200e.js"
+  ]
+}
