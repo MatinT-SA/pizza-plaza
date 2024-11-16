@@ -95,7 +95,7 @@ body {
   padding: 1rem 0;
   border-top: 2px solid currentColor;
   border-bottom: 2px solid currentColor;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 500;
@@ -103,6 +103,7 @@ body {
 
 .menu > p {
   font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
   text-align: center;
   line-height: 1.6;
   width: 80%;
@@ -112,7 +113,7 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  gap: 4.5rem;
 }
 
 .pizza {
@@ -136,7 +137,7 @@ body {
 
 .pizza h3 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .pizza p {
@@ -235,4 +236,20 @@ body {
 .btn:hover::before,
 .btn:hover::after {
   width: 51%;
+}
+
+/* ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ */
+/* ✵✵✵✵✵✵✵✵✵✵✵✵✵✵✵⊞ Responsiveness ⊞✵✵✵✵✵✵✵✵✵✵✵✵✵✵ */
+/* ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓ */
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pizzas {
+    grid-template-columns: 1fr;
+  }
 }
